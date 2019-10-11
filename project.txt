@@ -46,7 +46,7 @@ count = 0
 rgb = random.choice(color_list)
 e_p = [width,random.randint(50,height-50)]
 e1_p= [random.randint(width,width+100),random.randint(50,height-100)]
-random = random.randint(enemy_size,height-enemy_size)
+Random = random.randint(enemy_size,height-enemy_size)
 #game over#########################################################
 def game_over():
      while True:
@@ -143,7 +143,6 @@ def game(lead_y,lead_X,speed,count):
                     
 
          pygame.draw.rect(screen,red,[e_p[0],e_p[1],enemy_size,enemy_size])
-         pygame.draw.rect(screen,red,[e_p[0],e_p[1]+,enemy_size,enemy_size])
          if e1_p[0]>0 and e1_p[0] <=width+100 :
               e1_p[0] -= 10
          else:
