@@ -1,6 +1,7 @@
 import pygame
 import sys
 import random
+import time
 pygame.init()
 res = (720,720)
 c1 = random.randint(125,255)
